@@ -1,0 +1,103 @@
+{
+  "schema": "flussi/1",
+  "edizione": "2026-10-22",
+  "regola": "solo cifre pubbliche con fonte; null + nota se non disponibile",
+  "fonti": {
+    "bofa_inv": {
+      "url": "https://www.investing.com/news/stock-market-news/stay-riskoff-as-higher-real-yields-and-ai-volatility-threaten-stocks-hartnett-4953610",
+      "data": "2026-10-16",
+      "nota": "BofA Flow Show su dati EPFR, ripreso da Investing.com/Reuters"
+    },
+    "bofa_biggo": {
+      "url": "https://finance.biggo.com/news/89ffe182-6500-463e-b6e0-a38e5903ad59",
+      "data": "2026-10-16"
+    },
+    "lipper_gate": {
+      "url": "https://www.gate.com/news/detail/technology-funds-lost-475-billion-as-global-equity-funds-gain-20-billion-in-25003943",
+      "data": "2026-10-16",
+      "nota": "LSEG Lipper settimana al 14/10, ripreso da Reuters"
+    },
+    "lipper_albatross": {
+      "url": "https://albatrossletter.com/",
+      "data": "2026-10-18"
+    }
+  },
+  "bofa_flow_show": {
+    "as_of": "2026-10-14",
+    "fonte": [
+      "bofa_inv",
+      "bofa_biggo"
+    ],
+    "unita": "mld USD, settimana",
+    "flussi": {
+      "azionario_globale": 64.5,
+      "azionario_usa": 39.1,
+      "usa_large_cap": 32.5,
+      "tech": 10.7,
+      "em_azionario": 17.7,
+      "cina": 8.6,
+      "giappone": 0.4,
+      "europa": -1.5,
+      "finanziari": -1.4,
+      "consumi": -0.6,
+      "obbligazionario": 11.8,
+      "treasury": 3.6,
+      "ig": 3.5,
+      "muni": 4.5,
+      "em_debito": 0.8,
+      "high_yield": -0.9,
+      "monetari": -53.1,
+      "oro": 0.1,
+      "cripto": -0.6
+    },
+    "ytd": {
+      "tech": 196,
+      "azionario_globale_annualizzato": 1300,
+      "azionario_usa_annualizzato": 636
+    },
+    "serie": {
+      "treasury_settimane_consecutive_afflussi": 16,
+      "muni_settimane": 26,
+      "em_debito_settimane": 11,
+      "hy_settimane_deflussi": 3
+    },
+    "bull_bear": {
+      "valore": 7.4,
+      "precedente": 8.1,
+      "nota": "chiude il sell signal scattato il 26/5/2026"
+    },
+    "nota": "il Flow Show della settimana al 21/10 esce venerdi' 23/10"
+  },
+  "epfr_lipper": {
+    "as_of": "2026-10-14",
+    "fonte": [
+      "lipper_gate",
+      "lipper_albatross"
+    ],
+    "usa": {
+      "azionario": 13.0,
+      "obbligazionario": null
+    },
+    "europa": {
+      "azionario": 1.5,
+      "obbligazionario": null
+    },
+    "globale": {
+      "azionario": 20.01,
+      "obbligazionario": 7.8,
+      "monetari": -46.7,
+      "tech": -4.75,
+      "industriali": -1.86,
+      "finanziari": -1.43,
+      "asia_azionario": 2.93
+    },
+    "nota": [
+      "Lipper settimana al 21/10 non ancora uscito al 22/10; obbligazionario USA ed Europa separati non trovati. EPFR diretto e' a pagamento"
+    ]
+  },
+  "_origine": "copiato da guado77/imf-spglobal-wrap_ dati/flussi/ultimo.json il 2026-10-22",
+  "_stampa_ufficiale": {
+    "bofa_flow_show": "settimana al 2026-10-14",
+    "lseg_lipper": "settimana al 2026-10-14"
+  }
+}
