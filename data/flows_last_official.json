@@ -1,6 +1,7 @@
 {
   "schema": "flussi/1",
-  "edizione": "2026-10-22",
+  "edizione": "2026-10-23",
+  "generato": "2026-10-23T15:10+02:00",
   "regola": "solo cifre pubbliche con fonte; null + nota se non disponibile",
   "fonti": {
     "bofa_inv": {
@@ -12,6 +13,27 @@
       "url": "https://finance.biggo.com/news/89ffe182-6500-463e-b6e0-a38e5903ad59",
       "data": "2026-10-16"
     },
+    "cftc_tff": {
+      "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+      "data": "2026-10-16",
+      "nota": "posizioni al 13/10/2026, futures only"
+    },
+    "cftc_dis_metalli": {
+      "url": "https://www.cftc.gov/dea/futures/other_lf.htm",
+      "data": "2026-10-16"
+    },
+    "cftc_dis_petrolio": {
+      "url": "https://www.cftc.gov/dea/futures/petroleum_lf.htm",
+      "data": "2026-10-16"
+    },
+    "closingprint": {
+      "url": "https://www.theclosingprint.net/2026/10/post-market-summary-2026-10-21/",
+      "data": "2026-10-21"
+    },
+    "reuters_close": {
+      "url": "https://www.streetinsider.com/Reuters/Stocks+rise+on+AI-led+earnings%2C+Frances+10-year+bond+yield+hits+5%25/27211675.html",
+      "data": "2026-10-21"
+    },
     "lipper_gate": {
       "url": "https://www.gate.com/news/detail/technology-funds-lost-475-billion-as-global-equity-funds-gain-20-billion-in-25003943",
       "data": "2026-10-16",
@@ -19,85 +41,368 @@
     },
     "lipper_albatross": {
       "url": "https://albatrossletter.com/",
-      "data": "2026-10-18"
+      "data": "2026-10-18",
+      "nota": "riepilogo Reuters/LSEG Lipper settimana al 14/10"
+    },
+    "reuters_intraday_2210": {
+      "url": "https://live.euronext.com/en/financial-news/stocks-drop-meta-dampens-ai-optimism-treasury-yields-fall",
+      "data": "2026-10-22",
+      "nota": "Reuters, 22/10 ore 18:42 CEST, prezzi intraday"
+    },
+    "bofa_fs_2210": {
+      "url": "BofA Global Research, The Flow Show 'Enter the Dragon' (PDF, non pubblico)",
+      "data": "2026-10-22",
+      "nota": "BofA Flow Show 22/10/2026 (PDF fornito da Andrea); dati EPFR settimana al 21/10/2026"
+    },
+    "lipper_reuters_2310": {
+      "url": "https://www.investing.com/news/stock-market-news/global-equity-funds-attract-inflows-for-a-fifth-consecutive-week-4968962",
+      "data": "2026-10-23",
+      "nota": "Reuters 23/10/2026 su dati LSEG Lipper, settimana al 21/10 (anche streetinsider.com, live.euronext.com)"
     }
   },
   "bofa_flow_show": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-21",
     "fonte": [
-      "bofa_inv",
-      "bofa_biggo"
+      "bofa_fs_2210"
     ],
+    "fonte_descrizione": "BofA Flow Show 22/10/2026 (PDF fornito da Andrea)",
+    "titolo": "Enter the Dragon",
     "unita": "mld USD, settimana",
     "flussi": {
-      "azionario_globale": 64.5,
-      "azionario_usa": 39.1,
-      "usa_large_cap": 32.5,
-      "tech": 10.7,
-      "em_azionario": 17.7,
-      "cina": 8.6,
-      "giappone": 0.4,
-      "europa": -1.5,
-      "finanziari": -1.4,
-      "consumi": -0.6,
-      "obbligazionario": 11.8,
-      "treasury": 3.6,
-      "ig": 3.5,
-      "muni": 4.5,
-      "em_debito": 0.8,
-      "high_yield": -0.9,
-      "monetari": -53.1,
-      "oro": 0.1,
-      "cripto": -0.6
+      "azionario_globale": 55.6,
+      "azionario_etf": 67.3,
+      "azionario_fondi_comuni": -11.7,
+      "azionario_usa": 6.7,
+      "usa_large_cap": 4.5,
+      "usa_value": 1.9,
+      "usa_growth": -2.6,
+      "usa_small_cap": -7.5,
+      "europa": -1.0,
+      "giappone": 6.0,
+      "em_azionario": 33.5,
+      "cina": 17.0,
+      "corea": 5.8,
+      "tech": 18.8,
+      "energia": 0.9,
+      "sanita": 0.5,
+      "materiali": 0.2,
+      "finanziari": 0.054,
+      "immobiliare": -0.4,
+      "comunicazioni": -0.5,
+      "utilities": -1.6,
+      "consumi": -2.1,
+      "obbligazionario": 12.1,
+      "treasury": 5.4,
+      "ig": 1.5,
+      "high_yield": -0.5,
+      "em_debito": 4.0,
+      "muni": 0.7,
+      "tips": 0.2,
+      "bank_loan": 1.5,
+      "monetari": 28.8,
+      "oro": 2.6,
+      "cripto": 0.2
     },
     "ytd": {
-      "tech": 196,
-      "azionario_globale_annualizzato": 1300,
-      "azionario_usa_annualizzato": 636
+      "tech": null,
+      "azionario_mln": 1050688,
+      "azionario_etf_mln": 1499116,
+      "azionario_long_only_mln": -447882,
+      "obbligazionario_mln": 784013,
+      "materie_prime_mln": 60087,
+      "monetari_mln": 422706,
+      "usa_mln": 508347,
+      "europa_mln": -17184,
+      "giappone_mln": 33002,
+      "cina_mln": -176524,
+      "em_mln": 5287
     },
     "serie": {
-      "treasury_settimane_consecutive_afflussi": 16,
-      "muni_settimane": 26,
-      "em_debito_settimane": 11,
-      "hy_settimane_deflussi": 3
+      "treasury_settimane_consecutive_afflussi": 17,
+      "obbligazionario_settimane": 78,
+      "metalli_preziosi_settimane": 16,
+      "ig_settimane": 5,
+      "hy_settimane_deflussi": 4,
+      "em_debito_settimane": 12,
+      "muni_settimane": 27,
+      "tips_settimane": 38,
+      "bank_loan_settimane": 7,
+      "usa_settimane": 3,
+      "giappone_settimane": 2,
+      "europa_settimane_deflussi": 2,
+      "em_settimane": 4
     },
+    "record": [
+      "Consumi -2,1 mld: deflusso maggiore da feb 2014 (2° di sempre)",
+      "Utilities -1,6 mld: maggiore da mar 2015 (2° di sempre)",
+      "Tech +18,8 mld: maggiore da lug 2026",
+      "Cina +17,0 mld: maggiore da lug 2026",
+      "Giappone +6,0 mld: maggiore da apr 2026",
+      "Corea +5,8 mld: maggiore da lug 2026",
+      "Energia +1,1 mld (Flows to Know; +0,9 nella ripartizione settoriale): maggiore da apr 2026"
+    ],
     "bull_bear": {
-      "valore": 7.4,
-      "precedente": 8.1,
-      "nota": "chiude il sell signal scattato il 26/5/2026"
+      "valore": 7.2,
+      "precedente": 7.4,
+      "nota": "calo per breadth debole, HF ribassisti su petrolio e future S&P, spread junk piu' larghi, compensati da forti afflussi azionari; neutrale dopo letture 'extreme bull' d'estate; 'vecchio' B&B 5,3 da 5,1"
     },
-    "nota": "il Flow Show della settimana al 21/10 esce venerdi' 23/10"
+    "breadth_rule": "net 30% degli indici azionari globali 'oversold'; segnale buy a net 88%",
+    "scores_on_the_doors_ytd": {
+      "petrolio": 72.7,
+      "azioni_usa": 11.9,
+      "azioni_globali": 8.7,
+      "dollaro": 3.4,
+      "cash": 3.0,
+      "hy": -0.9,
+      "ig": -2.2,
+      "governativi": -3.0,
+      "oro": -6.9,
+      "bitcoin": -7.1
+    },
+    "private_clients": {
+      "aum_tn": 4.6,
+      "azioni_pct": 65.9,
+      "bond_pct": 17.4,
+      "cash_pct": 9.4
+    },
+    "hartnett": {
+      "tale_of_the_tape": "MDY sopra $666, IJR >$137, finanziari globali IXG >$125 dicono che il macro e' a posto: il risk-off di ottobre e' solo de-rating del tech nel ciclo di stretta, NDX tiene 28k; ma i 'tell' di crescita si rompono col tech (MAGS <$70, TSM <$400)",
+      "peak_yield": "aggiunge giocate 'peak yield': small cap, REIT, utilities, consumi discrezionali (deflussi capitolativi da utilities e discrezionali, 2° maggiori di sempre)",
+      "cina": "CSI 300 -20% da giugno guidato dal tech (-41%); rendimenti al minimo record 1,6%, CNYUSD massimo a 4 anni: classica combinazione deflattiva; export +36% a/a, high-tech +63% a/a = rischio deflazione per gli EPS globali",
+      "view": "tatticamente risk-off fino a meta' novembre: giu' rendimenti (GT30 verso 5%), giu' azioni, giu' dollaro (DXY sotto 100)",
+      "fms": "FMS di ottobre: investitori piu' sovrappesati sul tech da ago 2020; 50% 'no landing', 40% 'soft landing', 6% 'hard landing'"
+    },
+    "nota": "Flow Show settimana al 21/10/2026 (EPFR); il dettaglio 'europa' e regioni e' il dato settimanale tra parentesi nel PDF"
   },
   "epfr_lipper": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-21",
+    "data_stampa": "2026-10-23",
     "fonte": [
-      "lipper_gate",
-      "lipper_albatross"
+      "lipper_reuters_2310"
     ],
+    "unita": "mld USD, settimana",
     "usa": {
-      "azionario": 13.0,
+      "azionario": 5.07,
       "obbligazionario": null
     },
     "europa": {
-      "azionario": 1.5,
+      "azionario": 9.14,
       "obbligazionario": null
     },
     "globale": {
-      "azionario": 20.01,
-      "obbligazionario": 7.8,
-      "monetari": -46.7,
-      "tech": -4.75,
-      "industriali": -1.86,
-      "finanziari": -1.43,
-      "asia_azionario": 2.93
+      "azionario": 28.16,
+      "azionario_prec": 19.88,
+      "asia_azionario": 11.53,
+      "tech": 5.05,
+      "tech_prec": -4.77,
+      "sanita": 1.83,
+      "consumi_discrezionali": -1.29,
+      "obbligazionario": 9.44,
+      "bond_chf": 6.8,
+      "bond_breve": 2.78,
+      "high_yield": -1.68,
+      "governativi": -0.55,
+      "monetari": 15.86,
+      "monetari_prec": -47.51,
+      "oro_preziosi": 1.29,
+      "energia": 0.0415
+    },
+    "em": {
+      "azionario": 6.28,
+      "obbligazionario": -0.04872,
+      "fondi": 29174
+    },
+    "serie": {
+      "azionario_globale_settimane_afflussi": 5,
+      "obbligazionario_settimane_afflussi": 5
     },
     "nota": [
-      "Lipper settimana al 21/10 non ancora uscito al 22/10; obbligazionario USA ed Europa separati non trovati. EPFR diretto e' a pagamento"
+      "Asia: afflusso settimanale piu' alto almeno da dic 2022",
+      "Il prec. azionario globale ora 19,88 (stampa del 16/10 diceva 20,01: revisione)",
+      "Obbligazionario USA ed Europa separati non pubblicati"
     ]
   },
-  "_origine": "copiato da guado77/imf-spglobal-wrap_ dati/flussi/ultimo.json il 2026-10-22",
+  "cftc_cot": {
+    "as_of": "2026-10-13",
+    "pubblicato": "2026-10-16",
+    "unita": "contratti",
+    "tff": {
+      "fonte": "cftc_tff",
+      "colonne": [
+        "dealer_l",
+        "dealer_s",
+        "am_l",
+        "am_s",
+        "lev_l",
+        "lev_s"
+      ],
+      "contratti": {
+        "ES": {
+          "nome": "E-mini S&P 500",
+          "oi": 1931607,
+          "dealer_l": 200960,
+          "dealer_s": 803318,
+          "am_l": 1110384,
+          "am_s": 194549,
+          "lev_l": 121404,
+          "lev_s": 530130
+        },
+        "NQ": {
+          "nome": "Nasdaq mini",
+          "oi": 279515,
+          "dealer_l": 48575,
+          "dealer_s": 126507,
+          "am_l": 112604,
+          "am_s": 37281,
+          "lev_l": 48106,
+          "lev_s": 59699
+        },
+        "TU": {
+          "nome": "UST 2Y",
+          "oi": 4554153,
+          "dealer_l": 99693,
+          "dealer_s": 581414,
+          "am_l": 2532974,
+          "am_s": 737108,
+          "lev_l": 715286,
+          "lev_s": 2082694
+        },
+        "TY": {
+          "nome": "UST 10Y",
+          "oi": 5819512,
+          "dealer_l": 109711,
+          "dealer_s": 742524,
+          "am_l": 3672796,
+          "am_s": 774234,
+          "lev_l": 489362,
+          "lev_s": 2695299
+        },
+        "US": {
+          "nome": "UST Bond",
+          "oi": 1849727,
+          "dealer_l": 43520,
+          "dealer_s": 222819,
+          "am_l": 1072776,
+          "am_s": 681242,
+          "lev_l": 173217,
+          "lev_s": 327237
+        },
+        "VX": {
+          "nome": "VIX futures",
+          "oi": 448469,
+          "dealer_l": 106006,
+          "dealer_s": 35958,
+          "am_l": 47336,
+          "am_s": 124631,
+          "lev_l": 88587,
+          "lev_s": 87482
+        },
+        "EC": {
+          "nome": "Euro FX",
+          "oi": 874541,
+          "dealer_l": 55346,
+          "dealer_s": 220109,
+          "am_l": 502676,
+          "am_s": 302758,
+          "lev_l": 120021,
+          "lev_s": 188022
+        }
+      }
+    },
+    "disaggregated": {
+      "colonne": [
+        "prod_l",
+        "prod_s",
+        "swap_l",
+        "swap_s",
+        "mm_l",
+        "mm_s"
+      ],
+      "contratti": {
+        "GC": {
+          "nome": "Oro COMEX",
+          "fonte": "cftc_dis_metalli",
+          "oi": 396345,
+          "prod_l": 18386,
+          "prod_s": 36823,
+          "swap_l": 13976,
+          "swap_s": 238070,
+          "mm_l": 124747,
+          "mm_s": 17658
+        },
+        "CL": {
+          "nome": "WTI-Physical NYMEX",
+          "fonte": "cftc_dis_petrolio",
+          "oi": 1900179,
+          "prod_l": 660971,
+          "prod_s": 307828,
+          "swap_l": 126747,
+          "swap_s": 605225,
+          "mm_l": 171973,
+          "mm_s": 131399
+        }
+      }
+    },
+    "nota": "nuovo COT (posizioni al 20/10) in uscita il 23/10 alle 21:30 italiane: non ancora su Socrata alle 15:10, restano i dati al 13/10"
+  },
+  "liquidita": {
+    "as_of": null,
+    "fonte": [],
+    "metriche": {
+      "es_top_of_book": null,
+      "ust_market_depth": null,
+      "bund_depth": null,
+      "bid_ask_ust10y": null
+    },
+    "nota": "profondita' di book (ES, Treasury, Bund) solo da fornitori a pagamento o note di banche; nessuna cifra pubblica verificata"
+  },
+  "sistematici": {
+    "as_of": null,
+    "fonte": [],
+    "cta": null,
+    "vol_control": null,
+    "risk_parity": null,
+    "nota": "stime CTA/vol control/risk parity (GS, Nomura, UBS, Deutsche) circolano solo via citazioni secondarie non verificabili; lasciate null"
+  },
+  "vol_rischio": {
+    "as_of": "2026-10-21",
+    "fonte": [
+      "closingprint"
+    ],
+    "vix": 16.68,
+    "move": null,
+    "skew": null,
+    "gamma_dealer": null,
+    "note": [
+      "MOVE e SKEW non trovati con fonte datata",
+      "gamma dei dealer: solo fornitori a pagamento (SpotGamma, ecc.)",
+      "contesto BofA: real yield al 3%, preferenza risk-off per 3-4 settimane (bofa_biggo)"
+    ]
+  },
+  "mercati": {
+    "as_of": "2026-10-21",
+    "fonte": [
+      "closingprint",
+      "reuters_close",
+      "reuters_intraday_2210"
+    ],
+    "spx": 7757.17,
+    "ust2y": 4.81,
+    "ust10y": 5.13,
+    "tlt": null,
+    "wti": 97.15,
+    "brent": 108.82,
+    "oro": 4159.5,
+    "note": [
+      "Reuters da' il 10 anni a 5,111%; closingprint 5,13% (CBOE ^TNX 5,146%)",
+      "WTI contratto dicembre, settlement; oro future",
+      "TLT non trovato con fonte",
+      "Intraday 22/10 (Reuters 18:42 CEST, non chiusura): SPX 7.660,02 (-1,25%), UST 10a 4,994% (-15 pb, sotto 5% per la prima volta dal 23/9), WTI 98,35, Brent 111,25 (max da maggio); OAT 10a 5,06%, sopra il Treasury per la prima volta dal 2013"
+    ]
+  },
+  "_origine": "guado77/imf-spglobal-wrap_ dati/flussi/ultimo.json (BofA Flow Show 22/10 da PDF di Andrea) + Lipper Reuters 23/10, il 2026-10-23",
   "_stampa_ufficiale": {
-    "bofa_flow_show": "settimana al 2026-10-14",
-    "lseg_lipper": "settimana al 2026-10-14"
+    "bofa_flow_show": "settimana al 2026-10-21, stampa 2026-10-22",
+    "lseg_lipper": "settimana al 2026-10-21, stampa 2026-10-23"
   }
 }
